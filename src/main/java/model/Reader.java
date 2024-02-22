@@ -1,9 +1,10 @@
+package model;
+
 import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -12,12 +13,9 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name = "books_on_hand")
-public class BooksOnHand {
+@Table(name = "readers")
+public class Reader {
     @Id
     private int id;
-    private int bookId;
-    private int readerId;
-    private LocalDateTime issuedDate;
-    private LocalDateTime returnDate;
+    private String name;
 }
