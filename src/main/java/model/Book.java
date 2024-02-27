@@ -3,6 +3,8 @@ package model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -19,4 +21,7 @@ public class Book {
     private String title;
     private String author;
     private String genre;
+
+    @OneToMany(mappedBy = "book")
+    private Set<BookStatus> bookStatuses = new HashSet<>();
 }
