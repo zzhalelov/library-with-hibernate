@@ -6,3 +6,7 @@ INSERT INTO readers (id, name)
 VALUES (1, 'John Smith'),
        (2, 'Robert Walker'),
        (3, 'David Jameson');
+INSERT INTO book_statuses (status)
+VALUES ('Available');
+INSERT INTO book_statuses (status)
+VALUES ('On_Hand');
