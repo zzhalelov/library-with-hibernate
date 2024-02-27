@@ -18,3 +18,8 @@ CREATE TABLE books_on_hand
     issued_date DATE,
     return_date DATE
 );
+CREATE TABLE book_statuses
+(
+    id     SERIAL PRIMARY KEY,
+    status VARCHAR
+);
