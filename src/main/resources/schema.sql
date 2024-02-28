@@ -23,7 +23,7 @@ CREATE TABLE book_statuses
     id     SERIAL PRIMARY KEY,
     status VARCHAR
 );
-CREATE TABLE book_in_library
+CREATE TABLE books_in_library
 (
     id        SERIAL PRIMARY KEY,
     book_id   INT REFERENCES books (id),
