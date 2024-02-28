@@ -19,11 +19,11 @@ public class BookStatus {
     private String status;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "id_reader")
     private Reader reader;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "id_book")
     private Book book;
 
     private boolean onHand;
