@@ -17,11 +17,11 @@ public class BookInLibrary {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToOne(mappedBy = "books_in_library")
-    @Column(name = "book_id")
+    @ManyToOne
+    @JoinColumn(name = "book_id")
     private Book book;
 
-    @OneToOne(mappedBy = "books_in_library")
-    @Column(name = "status_id")
+    @ManyToOne
+    @JoinColumn(name = "status_id")
     private BookStatus bookStatus;
 }
